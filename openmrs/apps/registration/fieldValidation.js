@@ -1,0 +1,3 @@
+Bahmni.Registration.customValidator = {
+
+};
