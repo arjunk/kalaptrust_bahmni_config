@@ -1,0 +1,38 @@
+{
+        "id": "bahmni.adt.admission",
+        "extensionPoints": [
+            {
+                "id": "org.bahmni.adt.admit.action",
+                "description": "Bahmni Patient Admission Action"
+            },
+            {
+                "id": "org.bahmni.adt.transfer.action",
+                "description": "Bahmni Patient Transfer Action"
+            },
+            {
+                "id": "org.bahmni.adt.discharge.action",
+                "description": "Bahmni Patient Discharge Action"
+            },
+            {
+                "id": "org.bahmni.patient.search",
+                "description": "Bahmni patient search, lookup Page"
+            }
+        ],
+        "contextModel": [ 
+            "patientUuid",
+            "encounterUuid",
+            "visitUuid"
+        ],
+        "config" : {
+            "diagnosisStatus": "Inactive",
+            "onAdmissionForwardTo": "#/patient/{{patientUuid}}/visit/{{visitUuid}}/encounter/{{encounterUuid}}/bed",
+            "onTransferForwardTo": "#/patient/{{patientUuid}}/visit/{{visitUuid}}/encounter/{{encounterUuid}}/bed",
+            "onDischargeForwardTo": "#/patient/search",
+            "maxPatientsPerBed" : 2,
+            "dashboard":{
+                "translationKey": "DASHBOARD_TAB_GENERAL_KEY",
+                "sections": {
+            }}
+
+        }
+}
