@@ -1,0 +1,16 @@
+{
+        "id": "bahmni.orders",
+        "extensionPoints": [
+            {
+                "id": "org.bahmni.orders.search",
+                "description": "Orders Dashboard"
+            }
+        ],
+    "config" : {
+      "conceptSetUI": {
+      },
+      "sections": {
+
+      }
+    }
+}
