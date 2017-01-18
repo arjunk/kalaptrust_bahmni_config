@@ -1,0 +1,15 @@
+{
+
+    "bahmniClinicalPatientsSearchAllPatients": {
+        "id": "bahmni.clinical.patients.search.allPatients",
+        "extensionPointId": "org.bahmni.patient.search",
+        "type": "config",
+        "extensionParams": {
+            "translationKey": "MODULE_LABEL_ALL_KEY",
+            "forwardUrl": "#/programs/patient/{{patientUuid}}/consultationContext"
+        },
+        "label": "All",
+        "order": 2,
+        "requiredPrivilege": "app:clinical"
+    }
+}

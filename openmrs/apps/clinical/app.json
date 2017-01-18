@@ -1,0 +1,48 @@
+{
+    "id": "bahmni.clinical",
+    "extensionPoints": [
+        {
+            "id": "org.bahmni.clinical.consultation.board",
+            "description": "Bahmni Clinical Consultation Page"
+        },
+        {
+            "id": "org.bahmni.clinical.conceptSetGroup.*",
+            "description": "Define conceptsets part of a conceptset group"
+        },
+        {
+            "id": "org.bahmni.clinical.orders",
+            "description": "Bahmni Orders Page"
+        },
+        {
+            "id": "org.bahmni.patient.search",
+            "description": "Bahmni Patient search, lookups Page"
+        }
+    ],
+    "contextModel": [
+        "patientUuid",
+        "visitUuid"
+    ],
+    "config": {
+        "patientContext": {
+        		"programAttributes": [
+
+        		],
+        		"personAttributes": [
+
+        		],
+        		"additionalPatientIdentifiers": [
+       		    ]
+    	},
+        "obsIgnoreList": [
+        ],
+        "otherInvestigationsMap": {
+        },
+        "conceptSetUI": {
+        },
+        "visitPage": {
+            "observationDisplay": {
+                "conceptNames": []
+            }
+        }
+    }
+}
