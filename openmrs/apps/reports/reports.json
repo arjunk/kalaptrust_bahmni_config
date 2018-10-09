@@ -1,3 +1,84 @@
 {
-
+    "visitReport10": {
+        "name": "Visit Report",
+        "type": "visits",
+        "config": {
+            "forDataAnalysis": true,
+            "patientAttributes": [
+                "RationCard",
+                "class",
+                "education",
+                "occupation",
+                "primaryContact"
+            ],
+            "visitAttributes": [
+                "Visit Status"
+            ],
+            "patientAddresses": [
+                "address3",
+                "city_village"
+            ],
+            "applyDateRangeFor": "visitStopDate",
+            "visitTypesToFilter": [
+                "OPD"
+            ]
+        }
+    },
+    "testReport": {
+        "name": "Test Observation Report",
+        "type": "observations",
+        "config": {
+            "patientAttributes": [
+                "RationCard",
+                "class",
+                "education",
+                "occupation",
+                "primaryContact"
+            ],
+            "patientAddresses": [
+                "address3",
+                "city_village"
+            ],
+            "visitAttributes": [
+                "Visit Status"
+            ],
+            "showVisitInfo": true,
+            "showProvider": true,
+            "conceptNamesToFilter": [
+            ],
+            "conceptNameDisplayFormat": "shortNamePreferred",
+            "conceptValuesToFilter": ["0..20","100..","True"],
+            "conceptClassesToFilter": [],
+            "locationTagsToFilter": [],
+            "programsToFilter": [],
+            "applyDateRangeFor": "obsDate",
+            "encounterPerRow": true,
+            "forDataAnalysis": true,
+            "visitTypesToFilter": ["OPD"]
+        }
+    },
+    "visitReport": {
+        "name": "Visit Report",
+        "type": "visitReport",
+        "config": {
+            "personAttributes": [
+                "RationCard",
+                "class",
+                "education",
+                "occupation",
+                "primaryContact"
+            ],
+            "visitAttributes": [
+                "Visit Status"
+            ]
+        }
+    },
+    "patientReport": {
+        "name": "Patient Information",
+        "type": "PatientReport"
+    },
+    "ipdOPd": {
+ 	"name": "OPD/IPD Visit Count",
+ 	"type": "IpdOpdVisitCount"
+     }
 }
